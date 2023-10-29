@@ -2,42 +2,351 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/styles.css">
+    <title>Riot Games. Developer of League of Legends, VALORANT, Teamfight Tactics, Legends of Runeterra, and Wild Rift. Creators of Arcane. Home of LOL and VALORANT Esports. | Riot Games</title>
   </head>
   <body>
+
+    <!-- navbar -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- riot svg logo -->
+        <svg class="_32ANSIZormifc9Vc6VVwrx nav-logo " width="85" height="27"  viewBox="0 0 587.93 165"><title>mainLogoRiotFist21</title><path d="M98.77.33L0 46.07l24.61 93.66 18.73-2.3-5.15-58.89 6.15-2.74L54.96 136l32.01-3.93-5.69-65 6.09-2.71 11.68 66.23 32.38-3.98-6.23-71.25 6.16-2.74 12.77 72.43 32.01-3.93V19.71L98.77.33zm2.32 142.05l1.63 9.22 73.42 12.24v-30.68l-75.01 9.22h-.04zm144.49-19.22v12.63h15.57a14.84 14.84 0 01-1.92 7.31 13 13 0 01-5.6 5.11 20 20 0 01-8.9 1.8 17.53 17.53 0 01-10-2.8 17.87 17.87 0 01-6.44-8.14 33.06 33.06 0 01-2.27-12.93 31.81 31.81 0 012.32-12.81 18.14 18.14 0 016.5-8 17.27 17.27 0 019.82-2.78 19.31 19.31 0 015.36.71 14.15 14.15 0 014.33 2.09 12.92 12.92 0 013.18 3.29 15.61 15.61 0 012 4.44h17.27a27.22 27.22 0 00-3.46-10.28 28.84 28.84 0 00-7.05-8.1 32.6 32.6 0 00-9.91-5.29 37.91 37.91 0 00-12.06-1.86 37.32 37.32 0 00-14 2.6 32.6 32.6 0 00-11.36 7.61 35 35 0 00-7.61 12.21 46.15 46.15 0 00-2.73 16.44q0 11.94 4.54 20.59a32.4 32.4 0 0012.69 13.27 39.84 39.84 0 0035.84.84 28.39 28.39 0 0011.67-11q4.25-7.19 4.24-17.2v-9.76zm215.03 40.81V88.53h51.67v13.96h-34.62v16.76h27.99v13.96h-27.99v16.8h34.7v13.96h-51.75zm101.83-53.3a9 9 0 00-3.54-6.64c-2.09-1.59-5-2.38-8.69-2.38a16.63 16.63 0 00-6.26 1 8.62 8.62 0 00-3.83 2.78 6.74 6.74 0 00-1.33 4 6.2 6.2 0 00.79 3.29 7.27 7.27 0 002.4 2.45 16.54 16.54 0 003.7 1.79 40.14 40.14 0 004.64 1.31l6.63 1.54a47.19 47.19 0 019.45 3.08 27.46 27.46 0 017.2 4.68 18.84 18.84 0 014.58 6.39 20.37 20.37 0 011.61 8.29 20.65 20.65 0 01-3.54 12.11 22.56 22.56 0 01-10.15 7.85 41.31 41.31 0 01-15.93 2.76 42.69 42.69 0 01-16.17-2.81 23.22 23.22 0 01-10.72-8.48q-3.83-5.66-4-14.12h16.43a10.68 10.68 0 007.05 9.94 19.37 19.37 0 007.24 1.26 18.44 18.44 0 006.66-1.09 10 10 0 004.33-3 7.22 7.22 0 001.57-4.48 6.16 6.16 0 00-1.42-4 10.86 10.86 0 00-4.14-2.81 42.07 42.07 0 00-6.89-2.14l-8.07-1.95q-9.65-2.3-15.23-7.26t-5.54-13.44a19.86 19.86 0 013.72-12.12 24.74 24.74 0 0110.33-8.11 36.74 36.74 0 0115-2.91 35.62 35.62 0 0114.92 2.91 23.43 23.43 0 019.91 8.14 21.54 21.54 0 013.6 12.12zm-113.99 53.3h-16.87v-57.35l-1.73-.02-17.04 57.37h-16.86l-16.58-57.37-2.15.02v57.35h-16.87V88.53h28.67l14.48 50.56h1.75l14.48-50.56h28.72v75.44zm-114.66 0h18.27l-25.33-75.43h-23.15l-25.37 75.43h18.3l4.93-16.54h27.42zm-28.43-29.7l8.22-27.65h3.1l8.26 27.65zm278.58-37.76a4 4 0 01-3.67-2.44 4 4 0 010-3.1 4 4 0 01.85-1.27 4.25 4.25 0 011.27-.86 4.15 4.15 0 013.1 0 4.13 4.13 0 011.27.86 4.08 4.08 0 01.86 1.27 4 4 0 010 3.1 4.08 4.08 0 01-.86 1.27 4 4 0 01-1.27.86 4 4 0 01-1.55.31zm0-1.09a2.84 2.84 0 001.47-.39 2.94 2.94 0 001.05-1 2.93 2.93 0 000-2.92 3 3 0 00-1.06-1 2.93 2.93 0 00-2.92 0 3 3 0 00-1 1 2.86 2.86 0 000 2.92 3 3 0 001 1 2.83 2.83 0 001.46.39zm-1.46-1.15V90.6h1.78a1.52 1.52 0 01.69.15 1.13 1.13 0 01.47.42 1.24 1.24 0 01.17.66 1.16 1.16 0 01-.18.66 1 1 0 01-.48.41 1.56 1.56 0 01-.7.14h-1.2v-.72h1a.52.52 0 00.36-.12.5.5 0 00.14-.37.47.47 0 00-.14-.37.52.52 0 00-.36-.12h-.55v2.93zm2.39-1.68l.82 1.68h-1.11l-.75-1.68zM282.41 1.03h17.05v75.44h-17.05zm98.02 37.72q0 12.42-4.71 21a32.67 32.67 0 01-12.79 13.17 38.57 38.57 0 01-36.31 0 32.75 32.75 0 01-12.79-13.2q-4.71-8.66-4.71-21t4.71-21.05a32.67 32.67 0 0112.75-13.14 38.65 38.65 0 0136.31 0 32.67 32.67 0 0112.79 13.17q4.71 8.64 4.71 21.05m-17.35 0a33.35 33.35 0 00-2.23-13 17.47 17.47 0 00-6.33-8 18.57 18.57 0 00-19.45 0 17.57 17.57 0 00-6.35 8 38.59 38.59 0 000 26 17.49 17.49 0 006.35 8 18.57 18.57 0 0019.45 0 17.39 17.39 0 006.33-8 33.4 33.4 0 002.23-13M246.58 50.17l8.76 26.3h18.71l-9.74-28.33h-13.23l-.79-2.44c2.52-.49 6.83-1.25 10.65-3.85a20 20 0 008.75-16.39 24.15 24.15 0 00-3.26-12.75 21.9 21.9 0 00-9.36-8.64 32.56 32.56 0 00-14.64-3H212v75.4h17.06v-26.3zm-.32-15.61a19.35 19.35 0 01-7.26 1.18h-9.94V14.88h9.91a18.68 18.68 0 017.25 1.24 9.12 9.12 0 014.4 3.7 10 10 0 011.5 5.64 9.65 9.65 0 01-1.48 5.55 8.86 8.86 0 01-4.38 3.55M382.04 1.03v14h29.3l.8 2.45c-2.48.48-6.67 1.22-10.43 3.7v55.31h16.87v-61.5h19.62v-14z"></path></svg>
+        <svg class=" side-logo" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#f1f5f1"></circle><polygon points="16.42 8 6.75 12.47 9.16 21.64 11 21.41 10.49 15.65 11.1 15.38 12.13 21.27 15.27 20.89 14.71 14.53 15.3 14.27 16.45 20.75 19.62 20.36 19.01 13.38 19.61 13.12 20.86 20.2 24 19.82 24 9.89 16.42 8" fill="#050505"></polygon><polygon points="16.65 21.9 16.81 22.8 24 24 24 21 16.66 21.9 16.65 21.9" fill="#050505"></polygon></svg>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light mx-4" data-bs-toggle="dropdown" aria-current="page" href="#">WHO WE ARE</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About Riot</a></li>
+                <li><a class="dropdown-item" href="#">Diversity & Inclusion</a></li>
+                <li><a class="dropdown-item" href="#">Social Impact</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light me-3" data-bs-toggle="dropdown" href="#">WORK WITH US</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item text-light ms-3">
+              <a class="nav-link " href="#" role="button"  aria-expanded="false">
+                NEWS
+              </a>
+              
+            </li>
+          </ul>
+          <form class="d-flex" role="search">        
+            <input class="search-input form-control me-3 text-light" type="search" placeholder="SEARCH" aria-label="Search">
+            <button class="search-btn btn btn-outline-secondary me-3 text-light" type="submit">Mohit Goswami</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <img class="main-hero" src="first-img.png" alt="heros">
+    <div class="landing-page">
+      <div class="on-main-hero">
+        <img src="https://www.riotgames.com/darkroom/500/c80f72675116861a48aa4651d4e30d1c:5f4eb5f92c36da41fce033de947c3f42/worlds23-white.png" alt="">
+      </div>
+      <div class="main-page-content">
+        <h2>The Pinnacle of Esports Competition Is Back</h2>
+        <p>Don’t miss a second of the action at LOLESPORTS.COM</p>
+        <button><i class=" btn-arrow fa-solid fa-arrow-right"></i><span class="btn-span">Watch Now</span></button>
+      </div>
+      
+    </div>
+
+    <!-- what's happening section -->
+
+    <section class="whats-happening">
+
+
+      <div class="whats-happening-title">
+        <div class="div">
+          <h1>What's happening?</h1>
+          <a href="#"><span>SEE MORE</span></a>
+        </div>
+        <div class="whats-happening-details">
+          <div class="whats-happening-details-hero">
+            <img src="dev-update-thumbnail.jpg" alt="">
+            <div class="text-overlay"><span>Dev Update: Champs, Lore & More</span>
+            <p>INSIDE RIOT </p></div>
+          </div>
+        
+          <div class="whats-happening-article-div">
+            <ul class="whats-happening-articles">
+              <li class="whats-happening-article">
+                <div class="whats-happening-article-title-wrapper">
+                  <h5 class="whats-happening-article-title"> The Making of Riot's New Home in Seatlle</h5>
+                  <div class="whats-happening-category">
+                    OFFICES
+                  </div>
+                </div>
+                <div class="whats-happening-article-image">
+                    <img src="article-img1.png" alt="">
+                </div>
+              </li>
+            </ul>
+            
+            <ul class="whats-happening-articles">
+              <li class="whats-happening-article">
+                <div class="whats-happening-article-title-wrapper">
+                  <h5 class="whats-happening-article-title"> Riot Client Game Hubs</h5>
+                  <div class="whats-happening-category">
+                    NEWS
+                  </div>
+                </div>
+                <div class="whats-happening-article-image">
+                    <img src="article-img2.png" alt="">
+                </div>
+              </li>
+            </ul>
+            
+            <ul class="whats-happening-articles">
+              <li class="whats-happening-article">
+                <div class="whats-happening-article-title-wrapper">
+                  <h5 class="whats-happening-article-title"> Wild Rift Third Year Global Anniversary Celebrations </h5>
+                  <div class="whats-happening-category">
+                    NEWS
+                  </div>
+                </div>
+                <div class="whats-happening-article-image">
+                    <img src="article-img3.png" alt="">
+                </div>
+              </li>
+            </ul>
+            
+            <ul class="whats-happening-articles">
+              <li class="whats-happening-article">
+                <div class="whats-happening-article-title-wrapper">
+                  <h5 class="whats-happening-article-title overflowing-h5"> GODS ft. NewJeans (뉴진스) | Worlds 2023 Anthem - League of Legends</h5>
+                  <div class="whats-happening-category">
+                    NEWS
+                  </div>
+                </div>
+                <div class="whats-happening-article-image">
+                    <img src="article-img4.png" alt="">
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- games,esports -->
+    <section class="games">
+
+      <div class="our-games">
+        <div class="our-games-container">
+          <div class="games-title">
+            <h2>Games</h2>
+          </div>
+          <!-- game cards -->
+          <div class="game-card">
+            
+            <div class="card"><img src="card1.png" alt="">
+              <div class="inner-card-content">
+                <div class="inner-card-logo">
+                  <img src="inner-card-1.png" alt="">
+                </div>
+                <div class="inner-card-description">
+                  <span class="inner-card-span"><svg style="height:20px" viewBox="0 0 17 16" fill="none"><path d="M3.444 4.415l4.087-.555.002 3.93-4.084.022-.005-3.397zM7.53 8.243l.003 3.932-4.084-.559v-3.4l4.08.027zm.496-4.455L13.442 3v4.74l-5.417.043V3.788zm5.42 4.491L13.441 13l-5.417-.762-.008-3.966 5.427.008z" fill="#FCFCFC"></path></svg>
+                  </span>
+                  <span class="inner-card-span"><svg style="height:20px" viewBox="0 0 17 16" fill="none"><path d="M12.437 10.793a5.53 5.53 0 0 1-.519.966c-.273.403-.496.682-.668.837-.267.255-.553.385-.858.392-.22 0-.485-.065-.794-.196a2.207 2.207 0 0 0-.853-.196 2.28 2.28 0 0 0-.878.196c-.314.131-.566.2-.759.207-.294.013-.586-.121-.878-.403-.187-.168-.42-.457-.7-.866a6.083 6.083 0 0 1-.738-1.522 5.773 5.773 0 0 1-.31-1.813c0-.67.14-1.248.42-1.733.22-.389.513-.696.879-.92.366-.225.761-.34 1.188-.348.233 0 .538.074.918.221.379.148.622.223.73.223.079 0 .35-.088.807-.262.433-.162.799-.229 1.098-.203.811.068 1.421.4 1.826.997-.725.456-1.084 1.095-1.077 1.914.006.638.23 1.169.668 1.59.2.196.421.347.668.454-.054.162-.11.317-.17.465zM10.575 3.2c0 .5-.176.967-.527 1.4-.424.513-.937.81-1.493.763a1.595 1.595 0 0 1-.011-.19c0-.48.202-.993.56-1.414.178-.213.406-.39.681-.53s.536-.217.78-.23c.008.068.01.135.01.201z" fill="#FCFCFC"></path></svg></span>
+                </div>
+              </div>
+            
+            
+            </div>
+            <div class="card"><img src="card2.png" alt="">
+              <div class="inner-card-content-same">
+                <div class="inner-card-logo-same">
+                  <img src="inner-card-2.png" alt="">
+                </div>
+                <div class="inner-card-description">
+                  <span class="inner-card-span"><svg style="height:20px" viewBox="0 0 17 16" fill="none"><path d="M3.444 4.415l4.087-.555.002 3.93-4.084.022-.005-3.397zM7.53 8.243l.003 3.932-4.084-.559v-3.4l4.08.027zm.496-4.455L13.442 3v4.74l-5.417.043V3.788zm5.42 4.491L13.441 13l-5.417-.762-.008-3.966 5.427.008z" fill="#FCFCFC"></path></svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card"><img src="card3.png" alt="">
+              <div class="inner-card-content-same">
+                <div class="inner-card-logo-same">
+                  <img src="inner-card-3.png" alt="">
+                </div>
+                <div class="inner-card-description">
+                  <span class="inner-card-span"><svg style="height:20px" viewBox="0 0 17 16" fill="none"><path d="M3.444 4.415l4.087-.555.002 3.93-4.084.022-.005-3.397zM7.53 8.243l.003 3.932-4.084-.559v-3.4l4.08.027zm.496-4.455L13.442 3v4.74l-5.417.043V3.788zm5.42 4.491L13.441 13l-5.417-.762-.008-3.966 5.427.008z" fill="#FCFCFC"></path></svg>
+                  </span>
+                  <span class="inner-card-span"><svg style="height:20px" viewBox="0 0 17 16" fill="none"><path d="M12.437 10.793a5.53 5.53 0 0 1-.519.966c-.273.403-.496.682-.668.837-.267.255-.553.385-.858.392-.22 0-.485-.065-.794-.196a2.207 2.207 0 0 0-.853-.196 2.28 2.28 0 0 0-.878.196c-.314.131-.566.2-.759.207-.294.013-.586-.121-.878-.403-.187-.168-.42-.457-.7-.866a6.083 6.083 0 0 1-.738-1.522 5.773 5.773 0 0 1-.31-1.813c0-.67.14-1.248.42-1.733.22-.389.513-.696.879-.92.366-.225.761-.34 1.188-.348.233 0 .538.074.918.221.379.148.622.223.73.223.079 0 .35-.088.807-.262.433-.162.799-.229 1.098-.203.811.068 1.421.4 1.826.997-.725.456-1.084 1.095-1.077 1.914.006.638.23 1.169.668 1.59.2.196.421.347.668.454-.054.162-.11.317-.17.465zM10.575 3.2c0 .5-.176.967-.527 1.4-.424.513-.937.81-1.493.763a1.595 1.595 0 0 1-.011-.19c0-.48.202-.993.56-1.414.178-.213.406-.39.681-.53s.536-.217.78-.23c.008.068.01.135.01.201z" fill="#FCFCFC"></path></svg></span>
+                  <span class="inner-card-span"><svg style="height:20px" viewBox="0 0 17 16" fill="none"><path d="M8.02 11.126a.624.624 0 1 0 1.248 0 .624.624 0 0 0-1.248 0zm-2.5-7.188v8.125c0 .518.42.938.937.938h4.375c.518 0 .938-.42.938-.938V3.938A.938.938 0 0 0 10.832 3H6.457a.938.938 0 0 0-.937.938zm.937 8.008v-7.89c0-.065.053-.118.117-.118h4.14c.065 0 .118.053.118.117v7.89a.117.117 0 0 1-.117.118h-4.14a.118.118 0 0 1-.118-.117z" fill="#FCFCFC"></path></svg></span>
+                </div>
+              </div>
+            </div>
+            <div class="card"><img src="card4.png" alt="">
+              <div class="inner-card-content-same">
+                <div class="inner-card-logo-same">
+                  <img src="inner-card-4.png" alt="">
+                </div>
+                <div class="inner-card-description">
+                  <span class="inner-card-span"><svg style="height:20px" viewBox="0 0 17 16" fill="none"><path d="M8.02 11.126a.624.624 0 1 0 1.248 0 .624.624 0 0 0-1.248 0zm-2.5-7.188v8.125c0 .518.42.938.937.938h4.375c.518 0 .938-.42.938-.938V3.938A.938.938 0 0 0 10.832 3H6.457a.938.938 0 0 0-.937.938zm.937 8.008v-7.89c0-.065.053-.118.117-.118h4.14c.065 0 .118.053.118.117v7.89a.117.117 0 0 1-.117.118h-4.14a.118.118 0 0 1-.118-.117z" fill="#FCFCFC"></path></svg></span>
+                </div>
+              </div>
+            </div>
+            <div class="card"><img src="card5.png" alt="">
+              <div class="inner-card-content-5">
+                <div class="inner-card-logo">
+                  <img src="inner-card-5.png" alt="">
+                </div>
+                <div class="inner-card-description">
+                  <span class="inner-card-span"><svg style="height:20px" viewBox="0 0 17 16" fill="none"><path d="M3.444 4.415l4.087-.555.002 3.93-4.084.022-.005-3.397zM7.53 8.243l.003 3.932-4.084-.559v-3.4l4.08.027zm.496-4.455L13.442 3v4.74l-5.417.043V3.788zm5.42 4.491L13.441 13l-5.417-.762-.008-3.966 5.427.008z" fill="#FCFCFC"></path></svg>
+                  </span>
+                  <span class="inner-card-span"><svg style="height:20px" viewBox="0 0 17 16" fill="none"><path d="M8.02 11.126a.624.624 0 1 0 1.248 0 .624.624 0 0 0-1.248 0zm-2.5-7.188v8.125c0 .518.42.938.937.938h4.375c.518 0 .938-.42.938-.938V3.938A.938.938 0 0 0 10.832 3H6.457a.938.938 0 0 0-.937.938zm.937 8.008v-7.89c0-.065.053-.118.117-.118h4.14c.065 0 .118.053.118.117v7.89a.117.117 0 0 1-.117.118h-4.14a.118.118 0 0 1-.118-.117z" fill="#FCFCFC"></path></svg></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+
+      <!-- esports section-->
+      <div class="esports-section">
+        <div class="our-esports">
+          <div class="esports-title">
+            <h2>Esports</h2>
+          </div>
+
+          <div class="esports-cards">
+
+            <div class="card"><img src="esports-card-1.png" alt="">
+              <div class="inner-card-content">
+                <div class="inner-card-logo inner-ecard-logo">
+                  <img src="esports-inner-card-1.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="card"><img src="esports-card-2.png" alt="">
+              <div class="inner-card-content-same">
+                <div class="inner-card-logo-same inner-ecard-logo">
+                  <img src="esports-inner-card-2.png" alt="">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- entertainment section -->
+
+      <div class="esports-section">
+        <div class="our-esports">
+          <div class="esports-title">
+            <h2>Entertainment</h2>
+          </div>
+
+          <div class="esports-cards">
+
+            <div class="card"><img src="ent-card-1.png" alt="">
+              <div class="inner-card-content">
+                <div class="inner-card-logo inner-ecard-logo">
+                  <img src="inner-ent-card-1.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="card"><img src="ent-card-2.png" alt="">
+              <div class="inner-card-content-same">
+                <div class="inner-card-logo-same inner-ecard-logo">
+                  <img src="inner-ent-card-2.png" alt="">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- carousel -->
+      <div class="carousel-section">
+        <div class="carousel-main">
+          <div class="carousel-title">
+            <h2>Riot Forge</h2>
+          </div>
+          <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="c1.png" alt="img" draggable="false">
+              <img src="c2.png" alt="img" draggable="false">
+              <img src="c3.png" alt="img" draggable="false">
+              <img src="c4.png" alt="img" draggable="false">
+              <img src="c5.png" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot">
+        <div class="foot-container">
+            <ul class="footer-menu">
+                <li><svg width="38" height="40" dataname="Layer 1" viewBox="0 0 185.47 163.51"><path class="cls-1" d="M98.77 0L0 45.74l24.61 93.66 18.73-2.3-5.15-58.89 6.15-2.74 10.62 60.2 32.01-3.93-5.69-65 6.09-2.71 11.68 66.23 32.38-3.98-6.23-71.25 6.16-2.74 12.77 72.43 32.01-3.93V19.38L98.77 0zm2.32 142.05l1.63 9.22 73.42 12.24v-30.68l-75.01 9.21-.04.01zM176.17.71V0h3.64v.71zm1.41 3.94V.4h.81v4.25zm3 0V0h.8v4.65zm2.21 0L180.73 0h.83L183 3.41 184.44 0h.84l-2.06 4.65zm1.83 0V0h.81v4.65z"></path></svg>
+                </li>
+                <li>PRESS</li>
+                <li>SECURITY</li>
+                <li>LEGAL</li>
+                <li>LEADERSHIP</li>
+                <li>CANDIDATE PRIVACY</li>
+                <li>TERMS OF SERVICE</li>
+                <li>PRIVACY NOTICE</li>
+                <li>PLAYER SUPPORT</li>
+                <li>E-VERIFY</li>
+                <li>ACCESSIBILITY</li>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook fa-xl" style="color: #898f9a;"></i>                        
+                    <i class="fa-brands fa-twitter fa-xl" style="color: #898f9a;"></i>                    
+                    <i class="fa-brands fa-linkedin-in fa-xl" style="color: #898f9a;"></i>
+                    <i class="fa-brands fa-youtube fa-xl" style="color: #898f9a;"></i>
+                </div>
+            </ul>
+            
+            <div class="hr-div"></div>
+            
+            <div class="end">
+                <p>Cookie Preferences&nbsp; &nbsp;|&nbsp; &nbsp;</p>
+                <p class="last-line">  © 2023 Riot Games, Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+      
+
+    </section>
+    
+
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>

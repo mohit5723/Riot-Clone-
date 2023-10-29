@@ -1,0 +1,588 @@
+:root{
+    --color-bg-gradient: rgba(11, 196, 226, 0.2);
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/FontFont_FF.Mark.Pro.Medium.otf') format('otf');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+.main-page-content h2{
+    color: white;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+p{
+    color: rgb(154, 151, 151);
+    font-size: 133%;
+}
+
+form{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: 1px;
+}
+
+
+
+.nav-logo{
+    filter: invert(1);
+}
+
+.side-logo{
+    max-height: 26px;
+    padding: 0 10px 0 30px;
+}
+
+.navbar{
+    background-color: transparent;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 300;
+    transition: background-color 0.3s ease;
+    height: 100px;
+}
+
+.nav-link{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold  ;
+    font-size: small;
+    letter-spacing: 1px;
+}
+
+.search-input{
+    border-radius: 69px;
+    width: auto;
+    background: transparent;
+    border: 1px solid white;
+    width: 180px;
+    height: 30px;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+
+.search-btn{
+    background-color: rgba(128,128,128,.2);
+    border: none;
+    height: 30px;
+    text-align: center  ;
+    font-size: small;
+    font-weight: bold;
+}
+
+.search-btn:hover{
+    background-color: rgba(128,128,128,.2);
+    border: none;
+}
+
+a{
+    color: white;
+}
+
+body{
+    font-family: "CustomFont";
+    
+}
+
+.main-hero{
+    object-fit: cover;
+    background-position: center center;
+    background-repeat: no-repeat    ;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 84vh;
+    width: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+    /* min-width: 84vh; */
+}
+
+/* .bg-img{
+  object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 84vh;
+    width: 100%;
+    /* z-index: -1; */
+    /* background-attachment: fixed; */
+    /* min-width: 84vh; */
+  /* background-image: url(https://www.riotgames.com/darkroom/2000/253ac5e8a0042b35f0115da9e7fc3fe9:4adc08c8bb824611dc7c56584ac96ecc/w23-riotsiteheader-3840x1600.png); */
+/* }  */
+
+.on-main-hero img{
+   
+    width: 363px; 
+}
+
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    left: 64px;
+    gap: 2rem;
+}
+
+
+
+.landing-page button {
+    background: linear-gradient(315deg,#0bc4e2 0,#2c8cc2 100%);
+    -webkit-border-radius: 22;
+    -moz-border-radius: 22;
+    border-radius: 22px;
+
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 27px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    line-height: 3rem;
+    font-weight: bolder;
+    max-width: 330px;
+    margin-top: 30px ;
+    border: none;
+  }
+  
+  .landing-page button:hover {
+
+    text-decoration: none;
+    box-shadow: 0 10px 30px -10px rgba(11,196,226,.25), 0 10px 30px -10px rgba(11,196,226,.5), 0 10px 35px -10px rgba(11,196,226,.5);    border: none;
+    background: linear-gradient(315deg,#0bc4e2 0,#0bc4e2 50%,#2c8cc2 100%);
+  }
+
+  .btn-arrow{
+    background-color: black;
+    border-radius: 50%;
+    width: 55px;
+    height: 50px;
+    padding: 13px;
+    margin-right: 15px ;
+    margin-left: -10px;
+  }
+
+  .btn-span{
+    letter-spacing: 1px;
+    margin-right: 1.993px;
+    font-size: xx-large;
+  }
+
+  .whats-happening{
+    background: linear-gradient(170deg,var(--color-bg-gradient) 5%,rgba(10,10,10,0) 20%);
+    background: radial-gradient(55% 180% at 5% 100%,var(--color-bg-gradient) 0,rgba(10,10,10,0) 75%,rgba(10,10,10,0) 100%);
+    background-color: #0a0a0a;
+    /* z-index: -1; */
+    
+    position: relative;
+    min-height: 100vh;
+    color: white;
+    
+  }
+
+  .whats-happening-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 110px;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1660px;
+    margin-top: 228px;
+  }
+
+  .div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    
+  }
+
+  .whats-happening-title h1{
+    font-size: 400%;
+    font-family: 'CustomFont';
+  }
+
+  .whats-happening-title a{
+    background-color: rgba(128,128,128,.2);
+    height: fit-content;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 104px;
+    text-align: center;
+    align-self: center;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    margin-left: 849px;
+  }
+
+  .whats-happening-details-hero img{
+    width: 870px;
+    height: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: padding 0.3s;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .whats-happening-details-hero img:hover{
+    border : 2px solid silver;
+    padding: -1px;
+  }
+  .text-overlay {
+    position: absolute; /* Set the text to an absolute position within the container */
+    top: 69%;
+    left: 23%;
+    transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+    font-size: xx-large;
+    color: #fff; /* Text color */
+    padding: 10px; /* Add padding to the text */
+    border-radius: 5px; /* Add rounded corners if desired */
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  .text-overlay p{
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .whats-happening-details{
+    display: flex  ;
+  }
+
+   .whats-happening-articles{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* width: max-content; */
+    
+   }
+   .whats-happening-article{
+    display: flex;
+    background-color: rgba(128,128,128,.2);
+    height: fit-content;
+   border-radius: 10px;
+   transition: padding 0.5s;
+   cursor: pointer;
+   }
+
+   .whats-happening-article:hover{
+    border: 2px solid silver;
+    padding: 5px;
+   }
+
+   .whats-happening-article-title-wrapper{
+        width: 60%;
+        display: inline-block;
+        padding: 20px 0 25px 20px;
+        
+   }
+   
+
+   .whats-happening-article-image img{
+    width: 215px;
+    height: 100%;
+    clip-path: polygon(15% 0,100% 0,100% 100%,0 100%);
+    border-radius: 0 10px 10px 0;
+    transition: padding 0.3s;
+   }
+
+   .whats-happening-article-title{
+    font-weight: bolder;
+    color: rgb(249, 249, 249);
+   }
+   
+   .whats-happening-category{
+    color: rgb(96, 95, 93);
+    font-weight: bolder;
+   }
+
+
+   /* games section */
+
+   .games{
+    background-color: rgb(31, 31, 31);
+    color: white;
+   }
+
+   .games-title h2{
+    font-size: 4rem;
+    margin-bottom: 3.75rem;
+   }
+
+   .game-card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    justify-content: center;
+  }
+
+  .our-games-container{
+    padding: 120px 80px 40px 80px;
+  }
+
+  .card {
+    width: calc(50% - 20px); /*Two cards per row*/
+    max-width: 1000px;
+    min-width: 150px;
+    height: 340px;
+    background-color: rgb(31, 31, 31);
+    margin: 10px;
+    margin-bottom: 40px;
+    
+  }
+
+  .card img{
+    object-fit: cover;
+    height: -webkit-fill-available;
+  }
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* One card per row on smaller screens */
+    }
+    
+    .center-card {
+        width: 100%; /* Centered card spans full width on smaller screens */
+    }
+}
+
+  .inner-card-content{
+    z-index: 1;
+    /* height: inherit; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    margin: 120px 0 0 60px;
+  }
+
+  .inner-card-logo img{
+    height: 70px;
+  }
+  .inner-card-description{
+    height: auto;
+    width: auto;
+    background-color: rgb(36, 37, 41);
+    border-radius: 30%;
+    padding: 1px 2px 1px 2px;
+
+  }
+
+  .inner-card-content-same{
+    z-index: 1;
+    /* height: inherit; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    margin: 93px 0 0 60px;
+  }
+  
+  .inner-card-logo-same img{
+    height: 100px;
+  }
+
+  .inner-card-content-5{
+    z-index: 1;
+    /* height: inherit; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    margin: 123px 0px 0 20px;
+  }
+ 
+  /* esports section */
+
+  .our-esports{
+    padding: 0px 80px 40px 80px;
+    
+  }
+  .our-esports h2{
+    font-size: 4rem;
+    margin-bottom: 3.75rem;
+  }
+  
+  .esports-cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    justify-content: center;
+  }
+
+  .inner-ecard-logo img{
+    height: 110px;
+  }
+
+  /* carousel */
+
+  .carousel-main{
+    padding: 0px 80px 40px 80px;
+    margin-bottom: 60px;
+  }
+  .carousel-main h2{
+    font-size: 4rem;
+    margin-bottom: 3.75rem;
+  }
+
+
+  #left{
+    z-index: 1;
+  }
+
+  .wrapper{
+    display: flex;
+    max-width: 1522px;
+    position: relative;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 22px;
+    width: calc(100% / 3);
+    width: 753px;
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }
+  li{
+    list-style: none;
+}
+
+
+.foot-container{
+    color: #8a8887;
+    background-color: rgb(37, 36, 35);
+    padding: 30px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+}
+
+.footer-menu{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    font-size: 85%;
+    padding-left: -3px;
+    fill: #656462;
+    font-weight: bold;
+    /* letter-spacing: 0.5px; */
+}
+
+.socials{
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+.socials i{
+    margin-right: 30px; 
+}
+
+.hr-div{
+    height: 2px;
+    width: 100%;
+    /* max-width: 1568px; */
+    /* margin: 0 auto; */
+    background-image: url(https://www.riotgames.com/assets/img/structure/ec52d55f0f379518c25d286fb69f4ea6/distressed-stroke.svg);
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+    background-size: 420px 2px;
+    margin-top: 30px;
+}
+
+.end{
+    display: flex;
+    /* gap: 2rem; */
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: small;
+    margin-left: 35px;
+    align-items: center;
+}
+
+.last-line{
+  font-size: 95%;
+  letter-spacing: 1px;
+}
+
+.card:hover{
+  border: 3px solid rgba(11, 196, 226, 0.2);
+  cursor: pointer;
+}
